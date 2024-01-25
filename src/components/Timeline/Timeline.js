@@ -2,7 +2,15 @@ import React from "react";
 
 import styles from "./TimeLine.module.css";
 
-const Timeline = ({ heading, fontFamily, tagline, clockIcon, data, bg }) => {
+const Timeline = ({
+  heading,
+  fontFamily,
+  tagline,
+  clockIcon,
+  arrow,
+  data,
+  bg,
+}) => {
   return (
     <section className={styles.wrapper} style={{ fontFamily: fontFamily }}>
       <div className={styles.headingContainer} style={{ background: bg }}>
@@ -16,7 +24,7 @@ const Timeline = ({ heading, fontFamily, tagline, clockIcon, data, bg }) => {
       </div>
       <div className={styles.cards}>
         <div className={styles.arrow}>
-          <i class="fa-solid fa-play"></i>
+          <i class={arrow}></i>
         </div>
         {data.map((el, id) => (
           <div

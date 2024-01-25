@@ -87,6 +87,7 @@ function App() {
     heading: "Timeline",
     tagline: "Briefly discuss the key dates for the project.",
     clockIcon: "fa-regular fa-clock",
+    arrow: "fa-solid fa-play",
     bg: "#fff",
 
     data: [
