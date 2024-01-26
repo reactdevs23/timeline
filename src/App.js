@@ -3,6 +3,7 @@ import styles from "./App.module.css";
 import WeddingTimeline from "./components/WeddingTimeline/WeddingTimeline";
 import { dance } from "./images";
 import Timeline from "./components/Timeline/Timeline";
+import { useState } from "react";
 
 //  font-family: "Poppins", sans-serif;
 //  font-family: "Inter", sans-serif;
@@ -84,10 +85,11 @@ function App() {
     ],
   };
 
-  const timeline = {
+  const [timeline, setTimeline] = useState({
     fontFamily: "'Inter', sans-serif",
     heading: "Timeline",
-    tagline: "Briefly discuss the key dates for the project.",
+    tagline:
+      "Briefly discuss the key dates for the project. Briefly discuss the key dates for the project. ",
     clockIcon: "fa-regular fa-clock",
     arrow: "fa-solid fa-play",
     bg: "#fff",
@@ -109,8 +111,13 @@ function App() {
         info: "List a milestone or deadline",
         bg: "#E7ECB1",
       },
+      {
+        title: "4th Quater",
+        info: "List a milestone or deadline",
+        bg: "#E7ECB1",
+      },
     ],
-  };
+  });
   return (
     <div className={styles.wrapper}>
       <FinancialPlaning {...financialPlaning} />

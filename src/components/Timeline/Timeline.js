@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 
 import styles from "./TimeLine.module.css";
 
@@ -12,9 +12,21 @@ const Timeline = ({
   bg,
   thickness,
 }) => {
+  const cardsRef = useRef(null);
+
+  const [cardsWidth, setCardsWidth] = useState(0);
+  console.log(cardsWidth);
+  useEffect(() => {
+    const width = cardsRef.current.offsetWidth;
+
+    setCardsWidth(width);
+  }, []);
   return (
     <section className={styles.wrapper} style={{ fontFamily: fontFamily }}>
-      <div className={styles.headingContainer} style={{ background: bg }}>
+      <div
+        className={styles.headingContainer}
+        style={{ background: bg, maxWidth: cardsWidth }}
+      >
         <div className={styles.headingAndTagline}>
           <h2 className={styles.heading}>{heading}</h2>
           <p className={styles.tagline}>{tagline}</p>
@@ -24,9 +36,13 @@ const Timeline = ({
         </div>
       </div>
       <div className={styles.cardsWrapper}>
-        <div className={styles.cards} style={{ "--thickness": thickness }}>
+        <div
+          className={styles.cards}
+          style={{ "--thickness": thickness }}
+          ref={cardsRef}
+        >
           <div className={styles.arrow}>
-            <i class={arrow}></i>
+            <i className={arrow}></i>
           </div>
           {data.map((el, id) => (
             <div
