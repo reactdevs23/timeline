@@ -21,7 +21,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 3px;
+  width: var(--thickness);
   height: 92%;
   background-color: #000;
 }
@@ -101,7 +101,7 @@
   transform: translateY(-50%);
   background: #000;
 
-  height: 2px;
+  height: var(--thickness);
   width: 70px;
 }
 .right .stageContainer::before {
@@ -126,7 +126,7 @@
   transform: translateY(-50%);
   background: #000;
 
-  height: 2px;
+  height: var(--thickness);
   width: 70px;
 }
 

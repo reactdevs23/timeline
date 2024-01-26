@@ -11,6 +11,7 @@ function App() {
     fontFamily: "'Inter', sans-serif",
     heading: "Financial Planning Cycle",
     tagline: "Zenith Central Bank",
+    thickness: "3px",
     plans: [
       {
         title: "Stage 1",
@@ -19,7 +20,7 @@ function App() {
       },
       {
         title: "Stage 2",
-        info: "Access your current financial state",
+        info: "Access your current financial state ",
         color: "#c7249e",
       },
       {
@@ -47,6 +48,7 @@ function App() {
   const weddingTimeline = {
     fontFamily: "'Inter', sans-serif",
     heading: "Wedding Timeline",
+    thickness: "3px",
     events: [
       {
         img: dance,
@@ -89,11 +91,12 @@ function App() {
     clockIcon: "fa-regular fa-clock",
     arrow: "fa-solid fa-play",
     bg: "#fff",
+    thickness: "3px",
 
     data: [
       {
         title: "1st Quater",
-        info: "List a milestone or deadline",
+        info: "List a milestone or deadline  List a milestone or deadline List a milestone or deadline ",
         bg: "#E7ECB1",
       },
       {
@@ -103,6 +106,16 @@ function App() {
       },
       {
         title: "3rd Quater",
+        info: "List a milestone or deadline",
+        bg: "#E7ECB1",
+      },
+      {
+        title: "4th Quater",
+        info: "List a milestone or deadline",
+        bg: "#E7ECB1",
+      },
+      {
+        title: "4th Quater",
         info: "List a milestone or deadline",
         bg: "#E7ECB1",
       },

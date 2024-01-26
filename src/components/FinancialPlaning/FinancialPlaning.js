@@ -1,7 +1,13 @@
 import React from "react";
 import styles from "./FinancialPlaning.module.css";
 
-const FinancialPlaning = ({ fontFamily, heading, tagline, plans }) => {
+const FinancialPlaning = ({
+  fontFamily,
+  heading,
+  tagline,
+  plans,
+  thickness,
+}) => {
   return (
     <section className={styles.wrapper} style={{ fontFamily: fontFamily }}>
       <div className={styles.headingContainer}>
@@ -9,7 +15,7 @@ const FinancialPlaning = ({ fontFamily, heading, tagline, plans }) => {
         <p className={styles.tagline}>{tagline}</p>
       </div>
 
-      <div className={styles.timeline}>
+      <div className={styles.timeline} style={{ "--thickness": thickness }}>
         {plans.map((plan, id) => (
           <div className={styles.row} key={id}>
             <div className={styles.left}>
