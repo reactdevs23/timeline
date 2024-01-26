@@ -35,12 +35,17 @@
   color: #fff;
   font-size: 30px;
 }
+.cardsWrapper {
+  display: flex;
+  justify-content: flex-start;
+}
 .cards {
   --top: 70px;
   display: flex;
   justify-content: flex-start;
   gap: 12px;
   position: relative;
+  width: auto;
 }
 .arrow {
   position: absolute;
@@ -88,6 +93,7 @@
   border-radius: 18px;
   padding: 24px;
   padding-top: 120px;
+  max-width: 370px;
 }
 /* .circle {
   content: " ";

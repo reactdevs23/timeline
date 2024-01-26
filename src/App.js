@@ -109,21 +109,6 @@ function App() {
         info: "List a milestone or deadline",
         bg: "#E7ECB1",
       },
-      {
-        title: "4th Quater",
-        info: "List a milestone or deadline",
-        bg: "#E7ECB1",
-      },
-      {
-        title: "4th Quater",
-        info: "List a milestone or deadline",
-        bg: "#E7ECB1",
-      },
-      {
-        title: "4th Quater",
-        info: "List a milestone or deadline",
-        bg: "#E7ECB1",
-      },
     ],
   };
   return (
